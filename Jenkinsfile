@@ -11,8 +11,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout the source code from GitLab
-                git 'https://gitlab.com/your_username/your_project.git'
+                // Checkout the source code from GitHub
+                git branch: 'main', url: 'https://github.com/aditya-g18/CICD-pipeline-with-jenkins.git', credentialsId: 'github-credentials'
             }
         }
 
