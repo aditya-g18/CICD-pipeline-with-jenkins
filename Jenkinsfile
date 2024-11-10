@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials'
-        DOCKERHUB_IMAGE_NAME = 'your_dockerhub_username/flask-app:latest'
+        DOCKERHUB_IMAGE_NAME = 'aditya1018/flask-app:latest'  // Ensure this matches your Docker Hub repository name
     }
 
     stages {
