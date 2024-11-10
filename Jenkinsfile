@@ -10,7 +10,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build('your_dockerhub_username/flask-app:latest')
+                    def customImage = docker.build('your_dockerhub_username/flask-app:latest')
                 }
             }
         }
@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-credentials') {
-                        docker.image('your_dockerhub_username/flask-app:latest').push()
+                        customImage.push()
                     }
                 }
             }
