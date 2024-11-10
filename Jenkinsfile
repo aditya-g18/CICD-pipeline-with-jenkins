@@ -4,8 +4,8 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'flask-app'
         DOCKER_TAG = 'latest'
-        REGISTRY = 'docker.io'    // Docker Hub registry ke liye sahi hai
-        REPO = 'aditya1018/flask-app'  // Apne DockerHub username ke saath repo ka naam daalein
+        REGISTRY = 'docker.io'  ye original h shi kr do ? 
+        REPO = 'your_dockerhub_username/flask-app'
     }
 
     stages {
